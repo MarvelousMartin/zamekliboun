@@ -216,7 +216,7 @@ export default function Header() {
                   </Popover>
                 ))}
                 {menu.map((item) => (
-                  <Link href={item.href}>
+                  <Link href={item.href} key={item.name}>
                     <a className="text-gray-500 dark:text-gray-200 text-base font-medium">
                       {item.name}
                     </a>

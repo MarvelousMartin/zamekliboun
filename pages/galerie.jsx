@@ -5,19 +5,40 @@ import Main from "components/elements/Main";
 export default function Galerie() {
   const images = [
     {
-      image: "/images/zamek-liboun-1.jpg",
+      source: "/images/zamek-liboun-1.jpg",
+      alt: "Zámek Liboun 1",
     },
     {
-      image: "/images/zamek-liboun-2.jpg",
+      source: "/images/zamek-liboun-2.jpg",
+      alt: "Zámek Liboun 2",
     },
     {
-      image: "/images/zamek-liboun-3.jpg",
+      source: "/images/zamek-liboun-3.jpg",
+      alt: "Zámek Liboun 3",
     },
     {
-      image: "/images/zamek-liboun-4.jpg",
+      source: "/images/zamek-liboun-4.jpg",
+      alt: "Zámek Liboun 4",
     },
     {
-      image: "/images/zamek-liboun-5.jpg",
+      source: "/images/zamek-liboun-5.jpg",
+      alt: "Zámek Liboun 5",
+    },
+    {
+      source: "/images/zamek-liboun-6.jpg",
+      alt: "Zámek Liboun 6",
+    },
+    {
+      source: "/images/zamek-liboun-7.jpg",
+      alt: "Zámek Liboun 7",
+    },
+    {
+      source: "/images/zamek-liboun-8.jpg",
+      alt: "Zámek Liboun 8",
+    },
+    {
+      source: "/images/zamek-liboun-9.jpg",
+      alt: "Zámek Liboun 9",
     },
   ];
   return (

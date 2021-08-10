@@ -61,7 +61,7 @@ const Gallery = ({ images }) => {
           className="text-white"
         />
       </div>
-      {images.map((slide, index) => {
+      {images.map((image, index) => {
         return (
           <div
             className={`transition-opacity delay-0 duration-700 ${
@@ -71,8 +71,8 @@ const Gallery = ({ images }) => {
           >
             {index === current && (
               <Image
-                src={slide.image}
-                alt="travel image"
+                src={image.source}
+                alt={image.alt}
                 className="cursor-pointer"
                 layout="fill"
                 objectFit="cover"
@@ -86,7 +86,8 @@ const Gallery = ({ images }) => {
       <Lightbox
         isOpen={isOpen}
         setIsOpen={setIsOpen}
-        image={images[current].image}
+        image={images[current].source}
+        alt={images[current].alt}
       />
     </section>
   );
