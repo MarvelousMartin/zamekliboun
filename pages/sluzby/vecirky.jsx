@@ -1,3 +1,10 @@
+import Main from "components/elements/Main";
+import Heading from "components/elements/Heading";
+
 export default function Vecirky() {
-  return <main className="px-4 py-6">Večírky</main>;
+  return (
+    <Main>
+      <Heading as="h1">Večírky</Heading>
+    </Main>
+  );
 }

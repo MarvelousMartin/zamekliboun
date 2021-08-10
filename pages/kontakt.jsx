@@ -1,3 +1,10 @@
+import Main from "components/elements/Main";
+import Heading from "components/elements/Heading";
+
 export default function Kontakt() {
-  return <main className="px-4 py-6">Kontakt</main>;
+  return (
+    <Main>
+      <Heading as="h1">Kontakt</Heading>
+    </Main>
+  );
 }

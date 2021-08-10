@@ -1,3 +1,10 @@
+import Main from "components/elements/Main";
+import Heading from "components/elements/Heading";
+
 export default function JidelniListek() {
-  return <main className="px-4 py-6">Jídelní lístek</main>;
+  return (
+    <Main>
+      <Heading as="h1">Jídelní lístek</Heading>
+    </Main>
+  );
 }
