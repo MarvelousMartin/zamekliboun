@@ -69,14 +69,23 @@ const Gallery = ({ images }) => {
             }`}
             key={index}
           >
-            {index === current && (
+            {index === current ? (
+              <Image
+                src={image.source}
+                alt={image.alt}
+                preload="true"
+                className="cursor-pointer"
+                layout="fill"
+                objectFit="cover"
+                onClick={() => setIsOpen(true)}
+              />
+            ) : (
               <Image
                 src={image.source}
                 alt={image.alt}
                 className="cursor-pointer"
                 layout="fill"
                 objectFit="cover"
-                loading="eager"
                 onClick={() => setIsOpen(true)}
               />
             )}
