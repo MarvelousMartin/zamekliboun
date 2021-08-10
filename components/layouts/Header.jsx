@@ -125,7 +125,7 @@ export default function Header() {
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 lg:justify-start lg:space-x-10 dark:border-white">
+            <div className="flex justify-between items-center border-b-2 border-gray-200 py-6 lg:justify-start lg:space-x-10 dark:border-white">
               <div className="lg:w-0 lg:flex-1">
                 <Link href="/">
                   <a className="flex items-baseline font-black text-xl md:text-2xl">
@@ -133,7 +133,7 @@ export default function Header() {
                     <FontAwesomeIcon
                       size="xs"
                       icon={faCrown}
-                      className="flex-shrink-0 text-red-600 ml-2"
+                      className="flex-shrink-0 text-damask-700 ml-2"
                       aria-hidden="true"
                     />
                   </a>
@@ -141,7 +141,7 @@ export default function Header() {
                 <p className="font-md text-md">Kamenný barokní zámek</p>
               </div>
               <div className="-mr-2 -my-2 xl:hidden">
-                <Popover.Button className="bg-white dark:bg-black rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
+                <Popover.Button className="bg-white dark:bg-black rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-damask-600">
                   <span className="sr-only">Otevřít menu</span>
                   <FontAwesomeIcon icon={faBars} />
                 </Popover.Button>
@@ -156,7 +156,7 @@ export default function Header() {
                             open
                               ? "text-gray-900 dark:text-gray-200"
                               : "text-gray-500 dark:text-gray-200",
-                            "group bg-white dark:bg-gray-900 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-8 focus:ring-red-500 dark:ring-offset-gray-900"
+                            "group bg-white dark:bg-gray-900 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-8 focus:ring-damask-600 dark:ring-offset-gray-900"
                           )}
                         >
                           <span>{menu.name}</span>
@@ -193,7 +193,7 @@ export default function Header() {
                                       <FontAwesomeIcon
                                         fixedWidth
                                         icon={child.icon}
-                                        className="flex-shrink-0 text-red-600"
+                                        className="flex-shrink-0 text-damask-700"
                                         aria-hidden="true"
                                       />
                                       <div className="ml-4">
@@ -224,7 +224,7 @@ export default function Header() {
                             open
                               ? "text-gray-900 dark:text-gray-200"
                               : "text-gray-500 dark:text-gray-200",
-                            "group bg-white dark:bg-gray-900 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-8 focus:ring-red-500 dark:ring-offset-gray-900"
+                            "group bg-white dark:bg-gray-900 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-8 focus:ring-damask-600 dark:ring-offset-gray-900"
                           )}
                         >
                           <span>{item.name}</span>
@@ -252,7 +252,7 @@ export default function Header() {
                                       <FontAwesomeIcon
                                         fixedWidth
                                         icon={item.icon}
-                                        className="flex-shrink-0 text-red-600"
+                                        className="flex-shrink-0 text-damask-700"
                                         aria-hidden="true"
                                       />
                                       <div className="ml-4">
@@ -282,7 +282,7 @@ export default function Header() {
                           open
                             ? "text-gray-900 dark:text-gray-200"
                             : "text-gray-500 dark:text-gray-200",
-                          "group bg-white dark:bg-gray-900 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-8 focus:ring-red-500 dark:ring-offset-gray-900"
+                          "group bg-white dark:bg-gray-900 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-8 focus:ring-damask-600 dark:ring-offset-gray-900"
                         )}
                       >
                         <span>Ostatní</span>
@@ -319,7 +319,7 @@ export default function Header() {
                                     <FontAwesomeIcon
                                       fixedWidth
                                       icon={item.icon}
-                                      className="flex-shrink-0 text-red-600"
+                                      className="flex-shrink-0 text-damask-700"
                                       aria-hidden="true"
                                     />
                                     <div className="ml-4">
@@ -357,7 +357,7 @@ export default function Header() {
                               <div className="mt-5 text-sm">
                                 <div className="text-base font-medium text-gray-500">
                                   <Link href="/auth/login">
-                                    <a className="text-red-600 hover:text-red-500">
+                                    <a className="text-damask-700 hover:text-damask-600">
                                       Přihlásit se
                                     </a>
                                   </Link>
@@ -397,7 +397,7 @@ export default function Header() {
                   <div className="flex items-center justify-between">
                     <div className="font-black text-xl md:text-2xl">Menu</div>
                     <div className="-mr-2">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
+                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-damask-600">
                         <span className="sr-only">Zavřít menu</span>
                         <FontAwesomeIcon
                           icon={faTimesCircle}
@@ -417,7 +417,7 @@ export default function Header() {
                                 <FontAwesomeIcon
                                   fixedWidth
                                   icon={menu.icon}
-                                  className="flex-shrink-0 text-red-600"
+                                  className="flex-shrink-0 text-damask-700"
                                   aria-hidden="true"
                                 />
                                 <span className="ml-5 text-base font-medium text-gray-900">
@@ -456,7 +456,7 @@ export default function Header() {
                                             fixedWidth
                                             size="xs"
                                             icon={child.icon}
-                                            className="flex-shrink-0 text-red-600"
+                                            className="flex-shrink-0 text-damask-700"
                                             aria-hidden="true"
                                           />
                                           <span className="ml-3 text-base text-gray-900">
@@ -477,7 +477,7 @@ export default function Header() {
                           <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                             <FontAwesomeIcon
                               icon={item.icon}
-                              className="flex-shrink-0 text-red-600"
+                              className="flex-shrink-0 text-damask-700"
                               aria-hidden="true"
                               fixedWidth
                             />
@@ -507,7 +507,7 @@ export default function Header() {
                   <div className="flex items-center justify-between">
                     <div className="text-base font-medium text-gray-500">
                       <Link href="/auth/login">
-                        <a className="text-red-600 hover:text-red-500 mr-3">
+                        <a className="text-damask-700 hover:text-damask-600 mr-3">
                           Přihlásit se
                         </a>
                       </Link>

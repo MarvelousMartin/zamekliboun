@@ -2,13 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faMapMarkerAlt, faClock } from "@fortawesome/free-solid-svg-icons";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
 export default function Footer() {
   return (
-    <footer className="bg-red-800">
+    <footer className="bg-damask-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:py-16 grid gap-y-6 md:grid-cols-3 text-white px-4 py-8">
         <div className="flex flex-col">
           <h2 className="font-bold text-lg md:text-xl">

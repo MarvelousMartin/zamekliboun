@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFlag, faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import { useTranslation } from "next-i18next";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -18,11 +17,11 @@ export default function LanguageList() {
       {({ open }) => (
         <>
           <div>
-            <Menu.Button className="inline-flex justify-center items-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-red-500">
+            <Menu.Button className="inline-flex justify-center items-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-damask-600">
               <FontAwesomeIcon
                 icon={faFlag}
                 size="xs"
-                className="flex-shrink-0 text-red-600"
+                className="flex-shrink-0 text-damask-700"
                 aria-hidden="true"
               />
               <span className="ml-3 mr-4">Jazyk</span>
@@ -58,7 +57,7 @@ export default function LanguageList() {
                     <a
                       className={classNames(
                         router.locale == "cs"
-                          ? "bg-red-500 text-gray-100"
+                          ? "bg-damask-600 text-gray-100"
                           : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
@@ -72,7 +71,7 @@ export default function LanguageList() {
                     <a
                       className={classNames(
                         router.locale == "en"
-                          ? "bg-red-500 text-gray-100"
+                          ? "bg-damask-600 text-gray-100"
                           : "text-gray-700",
                         "block px-4 py-2 text-sm"
                       )}
