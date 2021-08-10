@@ -10,11 +10,10 @@ import Lightbox from "components/elements/GalleryLightbox/Lightbox";
 const Gallery = ({ images }) => {
   const [current, setCurrent] = useState(0);
   const length = images.length;
-  let [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
-    console.log(current);
   };
 
   const prevSlide = () => {
