@@ -7,7 +7,4 @@ module.exports = {
     defaultLocale: "cs",
     locales: ["cs", "en"],
   },
-  images: {
-    domains: ["images.unsplash.com", "www.zamekliboun.eu"],
-  },
 };
