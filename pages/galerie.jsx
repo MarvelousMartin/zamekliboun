@@ -5,19 +5,19 @@ import Main from "components/elements/Main";
 export default function Galerie() {
   const images = [
     {
-      image: "http://www.zamekliboun.eu/wp-content/uploads/2014/08/10g.jpg",
+      image: "/images/zamek-liboun-1.jpg",
     },
     {
-      image: "http://www.zamekliboun.eu/wp-content/uploads/2014/08/14g.jpg",
+      image: "/images/zamek-liboun-2.jpg",
     },
     {
-      image: "http://www.zamekliboun.eu/wp-content/uploads/2014/08/3g.jpg",
+      image: "/images/zamek-liboun-3.jpg",
     },
     {
-      image: "http://www.zamekliboun.eu/wp-content/uploads/2014/08/7g.jpg",
+      image: "/images/zamek-liboun-4.jpg",
     },
     {
-      image: "http://www.zamekliboun.eu/wp-content/uploads/2014/08/2g.jpg",
+      image: "/images/zamek-liboun-5.jpg",
     },
   ];
   return (
