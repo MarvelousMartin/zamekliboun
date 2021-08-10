@@ -8,6 +8,6 @@ module.exports = {
     locales: ["cs", "en"],
   },
   images: {
-    domains: [],
+    domains: ["images.unsplash.com", "www.zamekliboun.eu"],
   },
 };
