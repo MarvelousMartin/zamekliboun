@@ -1,7 +1,9 @@
 import Heading from "components/elements/Heading";
+import Subheading from "components/elements/Subheading";
 import Main from "components/elements/Main";
 import Image from "next/image";
 import Timeline from "components/elements/Timeline";
+import Head from "next/head";
 
 export default function Historie() {
   const timeline = [
@@ -82,28 +84,38 @@ export default function Historie() {
     },
   ];
   return (
-    <Main>
-      <div className="mb-16">
-        <Heading as="h1">Stručná historie Zámku v Libouni</Heading>
-        <p className="font-medium text-lg mb-4 text-gray-500">
-          Pojďte se s námi podívat na stručnou historii našeho zámku
-        </p>
-      </div>
-      <Timeline data={timeline} />
-      <Heading as="h2">Galerie</Heading>
-      <div className="grid grid-cols-3 lg:grid-cols-5 gap-2">
-        {images.map((image) => {
-          return (
-            <Image
-              src={image.source}
-              alt={image.alt}
-              width="190"
-              height="183"
-              key={image.source}
-            />
-          );
-        })}
-      </div>
-    </Main>
+    <>
+      <Head>
+        <title>Zámek Libouň - Historie</title>
+      </Head>
+      <Main>
+        <div
+          style={{ backgroundImage: 'url("/vectors/knight.svg")' }}
+          className="bg-cover bg-center"
+        >
+          <div className="mb-16">
+            <Heading as="h1">Stručná historie Zámku v Libouni</Heading>
+            <Subheading>
+              Pojďte se s námi podívat na stručnou historii našeho zámku
+            </Subheading>
+          </div>
+          <Timeline data={timeline} />
+          <Heading as="h2">Galerie</Heading>
+          <div className="grid grid-cols-3 lg:grid-cols-5 gap-2">
+            {images.map((image) => {
+              return (
+                <Image
+                  src={image.source}
+                  alt={image.alt}
+                  width="190"
+                  height="183"
+                  key={image.source}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </Main>
+    </>
   );
 }
