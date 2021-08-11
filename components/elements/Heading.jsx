@@ -24,7 +24,7 @@ export default function Heading({ as, style, children }) {
       heading = <h6 className="font-black text-3xl mb-1">{children}</h6>;
       break;
     default:
-    // code block
+    // Default code block
   }
   return heading;
 }
