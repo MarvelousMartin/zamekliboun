@@ -51,11 +51,11 @@ export default function Footer() {
         <div className="flex flex-col">
           <div className="mb-3">
             <p className="font-bold">Programování / webdesign</p>
-            <a href="https://martinchoutka.cz/" target="_blank">
+            <a href="https://martinchoutka.cz/" target="_blank" rel="noreferrer">
               Martin Choutka
             </a>{" "}
             /
-            <a href="https://marvelousmartin.github.io/mypage/" target="_blank">
+            <a href="https://marvelousmartin.github.io/mypage/" target="_blank" rel="noreferrer">
               {" "}
               Martin Dub
             </a>
