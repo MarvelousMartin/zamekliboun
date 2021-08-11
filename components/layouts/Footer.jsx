@@ -51,7 +51,14 @@ export default function Footer() {
         <div className="flex flex-col">
           <div className="mb-3">
             <p className="font-bold">Programování / webdesign</p>
-            <a href="https://martinchoutka.cz/">Martin Choutka / Martin Dub</a>
+            <a href="https://martinchoutka.cz/" target="_blank">
+              Martin Choutka
+            </a>{" "}
+            /
+            <a href="https://marvelousmartin.github.io/mypage/" target="_blank">
+              {" "}
+              Martin Dub
+            </a>
           </div>
           <Link href="/">
             <a className="font-bold">{new Date().getFullYear()} Zámek Libouň</a>
